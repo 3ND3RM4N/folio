@@ -1,8 +1,33 @@
-body {
+body, html {
   font: Source Code Pro, Sans;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body footer {
+body .content, html .content {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+body .content .content-tab, html .content .content-tab {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body .content .show, html .content .show {
+  display: block;
+}
+
+body footer, html footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,10 +37,9 @@ body footer {
   left: 0;
   right: 0;
   width: 100%;
-  height: 8rem;
 }
 
-body footer div {
+body footer div, html footer div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,14 +57,15 @@ body footer div {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  padding: 1.5rem;
 }
 
-body footer div span.material-icons {
+body footer div span.material-icons, html footer div span.material-icons {
   color: #eee;
   font-size: 4rem;
 }
 
-body footer .clicked {
+body footer .clicked, html footer .clicked {
   background-color: #222;
   -webkit-box-shadow: inset 0 0 40px #111;
           box-shadow: inset 0 0 40px #111;

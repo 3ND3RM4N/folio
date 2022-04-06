@@ -1,7 +1,28 @@
 $fonts : Source Code Pro, Sans;
 
-body
+body,html
     font: $fonts
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+    .content
+        width: 100%
+        height: 100%
+        background-color: #eee
+
+        .content-tab
+            display: none
+            position: absolute
+            bottom: 0
+            top: 0
+            left: 0
+            right: 0
+            width: 100%
+            height: 100%
+        
+        .show
+            display: block
 
     footer
         display: flex
@@ -11,7 +32,6 @@ body
         left: 0
         right: 0
         width: 100%
-        height: 8rem
         //border: 1px solid #333
 
         div
@@ -23,7 +43,7 @@ body
             align-items: center
             vertical-align: middle
             flex-flow: column nowrap
-
+            padding: 1.5rem
             span.material-icons
                 color: #eee
                 font-size: 4rem
